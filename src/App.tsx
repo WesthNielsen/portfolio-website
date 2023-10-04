@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "./components/NavBar";
-import Landing from "./pages/Landing";
 import Background from "./components/Background";
 import Portfolio from "./pages/Portfolio";
 
