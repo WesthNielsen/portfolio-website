@@ -25,7 +25,7 @@ const PortfolioCard = (props: {
       <div className="bg-black/60 w-full h-full bg-cover opacity-0 backdrop-blur-sm hover:opacity-100 duration-500">
         <div className="w-full h-full pt-4 pb-2 px-4 flex items-center justify-center flex-col text-text">
           <h1 className="text-2xl">{props.projectName}</h1>
-          <p className="w-full h-full text-sm overflow-hidden">{props.bread}</p>
+          <p className="w-full h-full text-base overflow-hidden">{props.bread}</p>
         </div>
       </div>
     </div>
