@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -13,8 +15,8 @@ module.exports = {
         "5xl": "4.210rem",
       },
       fontFamily: {
-        heading: "Noto Sans Newa",
-        body: "Noto Sans Newa",
+        heading: "Poppins",
+        body: "Poppins",
       },
       fontWeight: {
         normal: "400",
@@ -24,10 +26,12 @@ module.exports = {
         text: "#dde4f8",
         background: "#060b19",
         primary: "#5232d2",
-        secondary: "#17061e",
+        secondary: "#001242",
         accent: "#972bc5",
+      },
+      backgroundImage: {
+        "salescomm-project": "url('./assets/SalesComm.png')",
       },
     },
   },
-  plugins: [],
 };
