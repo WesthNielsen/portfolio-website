@@ -3,6 +3,7 @@ import PortfolioCard from "../components/PortfolioCard";
 import { portfolioProjects } from "../constants/Portfolio-Projects";
 
 const Portfolio = () => {
+  //useEffect to animate on load
   useEffect(() => {
     const portfolioContainer = document.getElementById("portfolioContainer");
     if (portfolioContainer) {

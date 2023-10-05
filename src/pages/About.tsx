@@ -10,6 +10,7 @@ const About = (props: {
     props.setSelected(num);
   };
 
+  //useEffect to animate on load
   useEffect(() => {
     const aboutContainer = document.getElementById("aboutContainer");
     if (aboutContainer) {
@@ -30,10 +31,10 @@ const About = (props: {
       <div className="w-4/6 h-3/5 py-16">
         <div className="mb-16">
           <div className="w-max mb-4">
-            <h1 className="text-text text-4xl font-bold mr-16">Who Am I?</h1>
+            <h1 className="text-text text-4xl font-bold mr-16 selection:bg-primary/50">Who Am I?</h1>
             <Underline />
           </div>
-          <p className="text-text text-xl">
+          <p className="text-text text-xl selection:bg-primary/50">
             I am a software development student with over 5 years of hands-on
             coding experience. Currently pursuing my Bachelor's degree in
             Software Development at the IT University of Copenhagen with an

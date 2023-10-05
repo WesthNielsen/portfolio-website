@@ -3,7 +3,6 @@ import NavBar from "./components/NavBar";
 import Background from "./components/Background";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
-import Logo from "./components/Logo";
 import Contact from "./pages/Contact";
 
 function App() {

@@ -12,10 +12,8 @@ const NavBar = (props: {
 
   return (
     <header className="absolute w-full h-20 flex justify-center items-center">
-      <div className="absolute top-2 left-0 h-20 w-32 ml-4 flex items-center justify-center">
-        <button className="w-full h-full" onClick={() => window.location.reload()}>
-        <Logo scale={125}/>
-        </button>
+      <div className="absolute top-2 left-0 h-full w-36 ml-4 flex items-center justify-left">
+        <Logo/>
       </div>
       <div className="h-full w-1/4 flex justify-evenly items-center text-text pt-4">
         <NavBarItem
