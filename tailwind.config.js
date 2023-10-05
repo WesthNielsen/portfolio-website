@@ -32,6 +32,9 @@ module.exports = {
       backgroundImage: {
         "salescomm-project": "url('./assets/SalesComm.png')",
       },
+      transitionDuration: {
+        2000: "2000ms",
+      },
     },
   },
 };
