@@ -15,8 +15,11 @@ export const portfolioProjects: Array<PortfolioProject> = [
     projectGithub: "https://github.com/GoodKidJonesy/BFST22Group27",
   },
   {
-    imageName: "",
-    projectName: "Placeholder",
+    imageName: "ScooterSharing.png",
+    projectName: "Scooter Sharing App",
+    projectDescription:
+      'Scooter Sharing is an app that I have developed through my elective course "App Development" during my education. The app should mimic the typical electric scooter rental app. The project was developed in Kotlin, where Google\'s various APIs and platforms have been used, including Firebase, Google Maps and Authentication',
+    projectGithub: "https://github.com/GoodKidJonesy/MOAPD_ScooterSharing",
   },
   {
     imageName: "",
