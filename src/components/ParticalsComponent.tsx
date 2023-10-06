@@ -15,7 +15,7 @@ const ParticlesComponent = () => {
   const MemoizedParticles = useMemo(
     () => (
       <Particles
-        className="absolute top-0 left-0 w-full h-full"
+        className="absolute top-0 left-0 w-full h-full -z-10"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -33,7 +33,7 @@ const ParticlesComponent = () => {
           fpsLimit: 120, // Limit the frame rate to 120 frames per second
           particles: {
             number: {
-              value: 500, // Adjust the number of particles
+              value: 200, // Adjust the number of particles
               density: {
                 enable: true,
                 value_area: 800, // Adjust the area in which particles are distributed
@@ -41,7 +41,7 @@ const ParticlesComponent = () => {
             },
             size: {
               value: {
-                min: 0.1,
+                min: 0.3,
                 max: 3,
               }, // Adjust the particle size
             },
@@ -54,7 +54,7 @@ const ParticlesComponent = () => {
               random: false,
               speed: {
                 min: 0.01,
-                max: 3,
+                max: 2,
               },
               straight: false,
               out_mode: "out",
