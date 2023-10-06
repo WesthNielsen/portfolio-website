@@ -17,7 +17,7 @@ const Logo = () => {
     let interval: NodeJS.Timeout;
 
     const startCounting = () => {
-      if (counter < 27) {
+      if (counter < 21) {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
         setCounter((prevCounter) => prevCounter + 1);
       }
@@ -43,8 +43,8 @@ const Logo = () => {
       }
     };
 
-    if (counter < 27) {
-      const delay = 250 - counter * 15; // Increase the speed with each count
+    if (counter < 21) {
+      const delay = 200 - counter * 20; // Increase the speed with each count
       interval = setInterval(startCounting, delay);
     }
 

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { AiFillGithub, AiOutlineLinkedin } from "react-icons/ai";
 import Underline from "../components/Underline";
+import ParticlesComponent from "../components/ParticalsComponent";
 
 const Contact = () => {
   useEffect(() => {
@@ -20,8 +21,8 @@ const Contact = () => {
       id="contactContainer"
       className="w-full h-full flex items-center justify-center scale-0 duration-1000 ease-in-out opacity-0 -translate-y-1/2 translate-x-48"
     >
-      <div className="w-4/6 h-3/5 py-16 flex items-center justify-center text-text">
-        <div className="flex items-center justify-start flex-col h-full">
+      <div className="w-4/6 h-3/5 flex items-center justify-center text-text">
+        <div className="flex items-center justify-start flex-col h-full w-full">
           <h1 className="text-4xl font-bold mb-16">
             Did I pique your <i>interest?</i>
           </h1>
