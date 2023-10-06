@@ -48,6 +48,15 @@ const ParticlesComponent = () => {
             color: {
               value: ["#5232d2", "#001242", "#972bc5"], // Set the particle color
             },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: {
+                value: ["#5232d2", "#001242", "#972bc5"],
+              },
+              opacity: 0.015,
+              width: 1,
+            },
             move: {
               direction: "none",
               enable: true,
