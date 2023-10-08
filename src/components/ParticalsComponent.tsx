@@ -30,10 +30,10 @@ const ParticlesComponent = () => {
             },
             opacity: 0,
           },
-          fpsLimit: 120, // Limit the frame rate to 120 frames per second
+          fpsLimit: 60, // Limit the frame rate to 120 frames per second
           particles: {
             number: {
-              value: 200, // Adjust the number of particles
+              value: 50, // Adjust the number of particles
               density: {
                 enable: true,
                 value_area: 800, // Adjust the area in which particles are distributed

@@ -1,5 +1,5 @@
 import React from "react";
-import { PortfolioProject } from "../interfaces/Types";
+import { PortfolioProject } from "../types/Types";
 import { AiFillGithub } from "react-icons/ai";
 
 const PortfolioCard = (props: { project: PortfolioProject }) => {
@@ -23,9 +23,9 @@ const PortfolioCard = (props: { project: PortfolioProject }) => {
         }}
       />
       <div className="bg-black/60 w-full h-full bg-cover opacity-0 backdrop-blur-sm hover:opacity-100 duration-500">
-        <div className="w-full h-full pt-4 pb-2 px-4 flex items-center justify-center flex-col text-text">
+        <div className="w-full h-full pt-4 pb-2 px-4 flex items-center justify-center flex-col ">
           <div className="relative w-full flex justify-center items-center pb-2">
-            <h1 className="text-2xl selection:bg-primary/50">{props.project.projectName}</h1>
+            <h1 className="text-2xl">{props.project.projectName}</h1>
             {props.project.projectGithub && (
               <AiFillGithub
                 className="text-3xl absolute h-full left-0 cursor-pointer"
@@ -33,7 +33,7 @@ const PortfolioCard = (props: { project: PortfolioProject }) => {
               />
             )}
           </div>
-          <p className="w-full h-full text-base overflow-hidden selection:bg-primary/50">
+          <p className="w-full h-full text-base overflow-hidden">
             {props.project.projectDescription}
           </p>
         </div>

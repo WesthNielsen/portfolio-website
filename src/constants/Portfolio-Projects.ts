@@ -1,4 +1,4 @@
-import { PortfolioProject } from "../interfaces/Types";
+import { PortfolioProject } from "../types/Types";
 
 export const portfolioProjects: Array<PortfolioProject> = [
   {

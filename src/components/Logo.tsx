@@ -1,14 +1,25 @@
 import React, { useEffect, useState } from "react";
 
-const Logo = () => {
+const Logo = (props: {
+  selected?: number;
+  setSelected?: React.Dispatch<React.SetStateAction<number>>;
+}) => {
   const images: Array<string> = ["Off.png", "Mid.png"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [counter, setCounter] = useState(0);
   const [eligbleToReload, setEligbleToReload] = useState(false);
 
+  useEffect(() => {
+    if (props.selected === 0) {
+      setEligbleToReload(false);
+      setCounter(0);
+      setCurrentIndex(0);
+    }
+  }, [props.selected]);
+
   const handleClick = () => {
     if (eligbleToReload) {
-      window.location.reload();
+      if (props.setSelected != null) props.setSelected(0);
     }
   };
 
