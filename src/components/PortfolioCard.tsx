@@ -29,7 +29,7 @@ const PortfolioCard = (props: { project: PortfolioProject }) => {
               />
             )}
           </div>
-          <p className="w-full h-full text-sm md:text-base overflow-hidden">
+          <p className="w-full h-full text-sm overflow-hidden">
             {props.project.projectDescription}
           </p>
         </div>

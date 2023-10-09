@@ -5,17 +5,14 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
 
 const ParticlesComponent = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container: any) => {
-    await console.log(container);
-  }, []);
+  const particlesLoaded = useCallback(async (container: any) => {}, []);
   const MemoizedParticles = useMemo(
     () => (
       <Particles
-        className="absolute top-0 left-0 w-full h-full -z-10"
+        className="absolute top-0 left-0 w-full h-full"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -97,6 +94,7 @@ const ParticlesComponent = () => {
     ),
     []
   );
+
   return MemoizedParticles;
 };
 

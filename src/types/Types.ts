@@ -1,5 +1,3 @@
-import { IconType } from "react-icons";
-
 export type PortfolioProject = {
     imageName?: string;
     projectName? : string;

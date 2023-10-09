@@ -28,13 +28,13 @@ const About = (props: {
       id="aboutContainer"
       className="w-full h-full flex items-center justify-center scale-0 duration-1000 ease-in-out opacity-0 -translate-y-1/2 -translate-x-48"
     >
-      <div className="w-11/12 md:w-4/6 md:h-3/5 md:py-16">
+      <div className="w-11/12 md:w-4/6 md:h-3/5 md:py-16 z-[1]">
         <div className="mb-16">
           <div className="w-max mb-4">
-            <h1 className="text-3xl md:text-4xl font-bold mr-16">Who Am I?</h1>
+            <h1 className="text-2xl md:text-4xl font-bold mr-16">Who Am I?</h1>
             <Underline />
           </div>
-          <p className="md:text-xl">
+          <p className="text-sm md:text-xl">
             I am a software development student with over 5 years of hands-on
             coding experience. Currently pursuing my Bachelor's degree in
             Software Development at the IT University of Copenhagen with an
@@ -52,8 +52,10 @@ const About = (props: {
             look forward to connecting with you and sharing my passion for
             software development.
           </p>
+          <div className="pt-8">
+            <SkillList />
+          </div>
         </div>
-        <SkillList />
       </div>
     </div>
   );

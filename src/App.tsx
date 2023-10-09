@@ -5,7 +5,6 @@ import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ParticlesComponent from "./components/ParticalsComponent";
-import Logo from "./components/Logo";
 import Socials from "./components/Socials";
 import Welcome from "./pages/Welcome";
 
