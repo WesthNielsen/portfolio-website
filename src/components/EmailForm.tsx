@@ -24,7 +24,6 @@ const EmailForm = () => {
       });
       alert("email successfully sent check inbox");
     } catch (error) {
-      console.log(error);
     } finally {
       setLoading(false);
     }

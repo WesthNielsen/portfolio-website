@@ -10,15 +10,11 @@ const PortfolioCard = (props: { project: PortfolioProject }) => {
   return props.project.imageName ? (
     <div className="w-full h-full rounded-3xl overflow-hidden shadow-lg hover:shadow-xl shadow-primary hover:shadow-primary ease-in-out relative group cursor-default duration-500 hover:scale-105">
       <div
-        className={"w-full h-full absolute top-0 left-0 bg-cover bg-right"}
+        className={"w-full h-full absolute top-0 left-0 bg-cover bg-center"}
         style={{
           backgroundImage:
             "url(" +
-            require(`../assets/Projects/${
-              props.project.imageName
-                ? props.project.imageName
-                : "Placeholder.png"
-            }`) +
+            require(`../assets/Projects/${props.project.imageName}`) +
             ")",
         }}
       />

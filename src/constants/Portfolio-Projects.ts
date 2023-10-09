@@ -22,15 +22,10 @@ export const portfolioProjects: Array<PortfolioProject> = [
     projectGithub: "https://github.com/GoodKidJonesy/MOAPD_ScooterSharing",
   },
   {
-    imageName: "",
-    projectName: "Placeholder",
-  },
-  {
-    imageName: "",
-    projectName: "Placeholder",
-  },
-  {
-    imageName: "",
-    projectName: "Placeholder",
+    imageName: "Portfolio.png",
+    projectName: "Portfolio Website",
+    projectDescription:
+      "This website is my portfolio website, which I have developed to showcase my projects and skills. The website is developed in React.js using TypeScript together with tailwindCSS.",
+    projectGithub: "https://github.com/GoodKidJonesy/portfolio-website",
   },
 ];
