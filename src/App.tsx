@@ -16,6 +16,7 @@ function App() {
     <div className="w-screen h-screen selection:bg-primary/50 text-text">
       <Background />
       <ParticlesComponent />
+      <NavBar selected={selected} setSelected={setSelected} />
       {selected === 0 ? <Welcome /> : null}
       {/*
       {selected === 1 ? <About setSelected={setSelected} /> : null}
@@ -23,7 +24,6 @@ function App() {
       {selected === 3 ? <Contact /> : null}
       <Socials />
       */}
-      <NavBar selected={selected} setSelected={setSelected} />
     </div>
   );
 }

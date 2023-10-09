@@ -35,15 +35,12 @@ const NavBar = (props: {
 
   return (
     <header className="absolute top-0 left-0 w-full h-full overflow-hidden">
-      {menuOpen ? (
-        <div className="w-full h-full" onClick={() => toggleMenu()} />
-      ) : null}
-      <div className="absolute top-0 w-36 flex items-center justify-left left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 h-14 md:h-16">
+      <div className="absolute top-0 w-36 flex items-center justify-left left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 h-14 md:h-16 z-10">
         <Logo selected={props.selected} setSelected={props.setSelected} />
       </div>
       <nav
         id="nav"
-        className="absolute top-0 flex justify-center items-center bg-background/95 md:bg-transparent right-0 md:right-auto flex-col md:flex-row w-5/6 md:w-full h-full md:h-16 rounded-l-2xl md:rounded-l-none translate-x-full md:translate-x-0 duration-300"
+        className="absolute top-0 flex justify-center items-center z-10 md:z-0 bg-background/95 md:bg-transparent right-0 md:right-auto flex-col md:flex-row w-5/6 md:w-full h-full md:h-16 rounded-l-2xl md:rounded-l-none translate-x-full md:translate-x-0 duration-300"
       >
         <div className="h-full flex justify-evenly items-center pb-48 md:pb-0 pt-14 md:pt-0 flex-col md:flex-row w-full md:w-1/4">
           <div className="h-12 w-full flex items-center justify-center">
@@ -73,7 +70,7 @@ const NavBar = (props: {
         </div>
       </nav>
       <div
-        className="right-0 top-0 absolute md:hidden text-2xl p-3"
+        className="right-0 top-0 absolute md:hidden text-2xl p-3 z-10 md:z-0"
         onClick={() => toggleMenu()}
       >
         {menuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
