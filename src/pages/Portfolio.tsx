@@ -18,15 +18,13 @@ const Portfolio = () => {
   return (
     <div
       id="portfolioContainer"
-      className="w-full h-full flex items-center justify-center scale-0 duration-1000 ease-in-out opacity-0 -translate-y-1/2"
+      className="w-full h-full flex items-center justify-center overflow-hidden scale-0 opacity-0 -translate-y-1/2 duration-500"
     >
-      <div className="w-11/12 md:w-4/6 h-full md:mt-0 md:h-3/5 grid grid-cols-1 md:grid-cols-3 gap-12 md:grid-rows-2 overflow-y-scroll overflow-x-visible md:overflow-visible pt-28 md:pt-0 pb-28 md:pb-0 px-4 md:px-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-3 lg:grid-rows-2 gap-12 pt-2 pb-12 md:pb-0 h-2/3 w-full md:w-4/5 px-8 overflow-x-hidden overflow-y-scroll md:overflow-hidden items-center">
         {portfolioProjects.map((project, index) => {
           return (
-            <div className="w-full h-48 md:h-auto flex justify-center aspect-video" key={index}>
-              <div className="w-11/12">
-                <PortfolioCard project={project} />
-              </div>
+            <div className="aspect-video flex items-center justify-center" key={index}>
+              <PortfolioCard project={project} />
             </div>
           );
         })}

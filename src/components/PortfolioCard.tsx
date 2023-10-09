@@ -19,7 +19,7 @@ const PortfolioCard = (props: { project: PortfolioProject }) => {
         }}
       />
       <div className="bg-black/60 w-full h-full bg-cover opacity-0 backdrop-blur-sm hover:opacity-100 duration-500">
-        <div className="w-full h-full pt-4 pb-2 px-4 flex items-center justify-center flex-col ">
+        <div className="w-full h-full pt-2 pb-2 px-4 flex items-center justify-center flex-col ">
           <div className="relative w-full flex justify-center items-center pb-2">
             <h1 className="text-xl md:text-2xl">{props.project.projectName}</h1>
             {props.project.projectGithub && (
