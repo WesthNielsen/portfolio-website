@@ -20,8 +20,8 @@ function App() {
       {selected === 0 ? <Welcome /> : null}
       {selected === 1 ? <About setSelected={setSelected} /> : null}
       {selected === 2 ? <Portfolio /> : null}
-      {/*
       {selected === 3 ? <Contact /> : null}
+      {/*}
       <Socials />
       */}
     </div>
