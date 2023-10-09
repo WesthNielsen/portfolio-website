@@ -25,7 +25,7 @@ export const portfolioProjects: Array<PortfolioProject> = [
     imageName: "Portfolio.png",
     projectName: "Portfolio Website",
     projectDescription:
-      "This website is my portfolio website, which I have developed to showcase my projects and skills. The website is developed in React.js using TypeScript together with tailwindCSS.",
+      "This website you are currently browsing is my portfolio. I built this web application using a stack of React.js, TypeScript, and TailwindCSS. It serves as a showcase of my web development skills and expertise in utilizing these modern technologies to create a responsive and engaging user experience.",
     projectGithub: "https://github.com/GoodKidJonesy/portfolio-website",
   },
 ];
