@@ -20,36 +20,20 @@ const Welcome = () => {
   return (
     <div
       id="portfolioContainer"
-      className="w-full h-full flex items-center justify-center cursor-default"
+      className="w-full h-full flex items-center justify-center overflow-hidden"
     >
-      <div className="w-11/12 md:w-4/6 h-3/5 py-16 flex justify-evenly items-center relative">
-        <div className="w-full h-full flex justify-center flex-col">
-          <h1
-            id="name"
-            className="text-3xl md:text-7xl font-bold duration-500 -translate-x-full opacity-0"
-          >
+      <div className="flex flex-col justify-center h-2/3 w-full md:w-4/5 px-4 overflow-hidden">
+          <h1 id="name" className="text-3xl lg:text-6xl font-bold -translate-x-full opacity-0 duration-500">
             Jonas Westh Nielsen
           </h1>
-          <h2
-            id="title"
-            className="text-xl md:text-3xl italic font-semibold duration-700 -translate-x-full opacity-0 pb-1 md:pb-0"
-          >
+          <h2 id="title" className="text-xl lg:text-2xl italic font-semibold -translate-x-full opacity-0 duration-700">
             Software Development Student
           </h2>
-          <h3
-            id="studies"
-            className="text-lg md:text-xl italic text-accent duration-1000 -translate-x-full opacity-0"
-          >
-            @
-            <a
-              href="https://itu.dk/Uddannelser/Bacheloruddannelser/Softwareudvikling"
-              target="_blank"
-              className="cursor-pointer"
-            >
-              IT-University of Copenhagen
+          <h3 id="studies" className="text-lg lg:text-xl text-accent italic -translate-x-full opacity-0 duration-1000">
+            <a href="" target="_blank" className="cursor-pointer">
+              @IT-University of Copenhagen
             </a>
           </h3>
-        </div>
       </div>
     </div>
   );

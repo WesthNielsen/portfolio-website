@@ -12,7 +12,7 @@ const ParticlesComponent = () => {
   const MemoizedParticles = useMemo(
     () => (
       <Particles
-        className="absolute top-0 left-0 w-full h-full"
+        className="absolute top-0 left-0 w-full h-full -z-[1]"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}

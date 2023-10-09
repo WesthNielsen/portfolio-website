@@ -11,19 +11,11 @@ const NavBar = (props: {
 
   useEffect(() => {
     const nav = document.getElementById("nav");
-    const header = document.getElementById("header");
     if (nav) {
       if (menuOpen) {
         nav.classList.remove("translate-x-full");
       } else {
         nav.classList.add("translate-x-full");
-      }
-    }
-    if (header) {
-      if (menuOpen) {
-        header.classList.add("pointer-events-auto");
-      } else {
-        header.classList.remove("pointer-events-auto");
       }
     }
   }, [menuOpen]);
@@ -46,16 +38,13 @@ const NavBar = (props: {
       id="header"
       className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden"
     >
-      <div className="absolute top-0 left-0 w-full h-20 pointer-events-auto bg-background/80 md:bg-transparent z-[2]">
-        <div className="absolute top-2 w-36 flex items-center justify-left left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 h-14 md:h-16 z-[50]">
-          <Logo selected={props.selected} setSelected={props.setSelected} />
-        </div>
+      <div className="relative top-0 left-0 w-full h-16 pointer-events-auto">
         <nav
           id="nav"
-          className="absolute top-0 flex justify-center items-center bg-background/95 md:bg-transparent right-0 md:right-auto flex-col md:flex-row w-5/6 md:w-full h[25vh] md:h-16 rounded-l-2xl md:rounded-l-none translate-x-full md:translate-x-0 duration-300"
+          className="bg-background/95 rounded-l-2xl absolute w-4/5 h-screen top-0 right-0 flex flex-col justify-center items-center duration-300 md:translate-x-0 md:w-full md:h-full md:rounded-none"
         >
-          <div className="h-screen md:h-min flex justify-evenly items-center pb-48 md:pb-0 pt-14 md:pt-4 flex-col md:flex-row w-full md:w-1/4">
-            <div className="h-12 w-full flex items-center justify-center">
+          <div className="w-full h-2/3 flex flex-col justify-evenly items-center md:w-1/4 md:h-full md:flex-row">
+            <div className="w-1/3 md:h-2/3">
               <NavBarItem
                 input="About"
                 selected={props.selected}
@@ -63,7 +52,7 @@ const NavBar = (props: {
                 onClick={() => handleClick(1)}
               />
             </div>
-            <div className="h-12 w-full flex items-center justify-center">
+            <div className="w-1/3 md:mx-8 md:h-2/3">
               <NavBarItem
                 input="Portfolio"
                 selected={props.selected}
@@ -71,7 +60,7 @@ const NavBar = (props: {
                 onClick={() => handleClick(2)}
               />
             </div>
-            <div className="h-12 w-full flex items-center justify-center">
+            <div className="w-1/3 md:h-2/3">
               <NavBarItem
                 input="Contact"
                 selected={props.selected}
@@ -82,10 +71,13 @@ const NavBar = (props: {
           </div>
         </nav>
         <div
-          className="right-2 top-2 absolute md:hidden text-2xl p-3"
+          className="absolute top-0 right-0 h-full w-max aspect-square flex items-center justify-center cursor-pointer text-2xl md:hidden"
           onClick={() => toggleMenu()}
         >
           {menuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
+        </div>
+        <div className="absolute top-0 left-1/2 md:left-0 -translate-x-1/2 md:-translate-x-0 w-36 h-full">
+          <Logo selected={props.selected} setSelected={props.setSelected} />
         </div>
       </div>
     </header>

@@ -5,7 +5,7 @@ import { IoLogoCss3 } from "react-icons/io";
 
 const SkillList = () => {
   return (
-    <div className="w-full h-min flex justify-evenly text-3xl md:text-6xl">
+    <div className="w-full h-min flex justify-evenly text-3xl md:text-4xl lg:text-6xl">
       <FaReact className="hover:scale-125 duration-200 hover:text-[#61DAFB]" />
       <SiTypescript className="hover:scale-125 duration-200 hover:text-[#007ACC]" />
       <IoLogoCss3 className="hover:scale-125 duration-200 hover:text-[#1572B6]" />
