@@ -15,12 +15,12 @@ function App() {
     <div className="w-screen h-screen selection:bg-primary/50 text-text overflow-hidden fixed">
       <Background />
       <ParticlesComponent />
+      <Socials />
       {selected === 0 ? <Welcome /> : null}
       {selected === 1 ? <About setSelected={setSelected} /> : null}
       {selected === 2 ? <Portfolio /> : null}
       {selected === 3 ? <Contact /> : null}
       <NavBar selected={selected} setSelected={setSelected} />
-      <Socials />
     </div>
   );
 }
