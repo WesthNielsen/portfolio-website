@@ -41,7 +41,7 @@ const NavBar = (props: {
       <div className="relative top-0 left-0 w-full h-16 pointer-events-auto">
         <nav
           id="nav"
-          className="rounded-l-2xl absolute w-4/5 h-screen top-0 right-0 flex flex-col justify-center items-center duration-300 md:translate-x-0 md:w-full md:h-full md:rounded-none bg-background/95 md:bg-transparent"
+          className="rounded-l-2xl absolute w-4/5 h-screen top-0 right-0 flex flex-col justify-center items-center duration-300 md:translate-x-0 md:w-full md:h-full md:rounded-none bg-background/95 md:bg-transparent z-[1]"
         >
           <div className="w-full h-2/3 flex flex-col justify-evenly items-center md:w-1/4 md:h-full md:flex-row">
             <div className="w-1/3 md:h-2/3">
@@ -71,7 +71,7 @@ const NavBar = (props: {
           </div>
         </nav>
         <div
-          className="absolute top-0 right-0 h-full w-max aspect-square flex items-center justify-center cursor-pointer text-2xl md:hidden"
+          className="absolute top-0 right-0 h-full w-max aspect-square flex items-center justify-center cursor-pointer text-2xl md:hidden z-[1]"
           onClick={() => toggleMenu()}
         >
           {menuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
