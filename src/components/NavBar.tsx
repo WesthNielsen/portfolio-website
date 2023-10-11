@@ -76,7 +76,7 @@ const NavBar = (props: {
         >
           {menuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
         </div>
-        <div className="absolute top-0 left-1/2 md:left-0 -translate-x-1/2 md:-translate-x-0 w-36 h-full">
+        <div className="absolute top-0 left-1/2 md:left-0 -translate-x-1/2 md:-translate-x-0 w-36 h-full md:z-[1]">
           <Logo selected={props.selected} setSelected={props.setSelected} />
         </div>
       </div>
