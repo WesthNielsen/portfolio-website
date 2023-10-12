@@ -19,7 +19,7 @@ const Contact = () => {
       id="contactContainer"
       className="w-full h-full flex items-center justify-center overflow-hidden scale-0 opacity-0 -translate-y-1/2 translate-x-48 duration-500"
     >
-      <div className="flex flex-col justify-center items-center h-2/3 w-full md:w-4/5 px-4 overflow-hidden">
+      <div className="flex flex-col justify-center items-center h-2/3 w-full md:w-1/2 px-4 overflow-hidden">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold pb-2">
           Did I pique your <i>interest?</i>
         </h1>
