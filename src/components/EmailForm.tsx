@@ -8,13 +8,13 @@ const EmailForm = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    emailjs.init("gehQ92_jzf9VbR5a9");
+    emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "");
   }, []);
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    const serviceId = "service_q310puo";
-    const templateId = "template_jimorlt";
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID || "";
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "";
     try {
       setLoading(true);
       await emailjs.send(serviceId, templateId, {
