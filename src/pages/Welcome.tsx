@@ -30,7 +30,7 @@ const Welcome = () => {
             Software Development Student
           </h2>
           <h3 id="studies" className="text-lg lg:text-xl text-accent italic -translate-x-full opacity-0 duration-1000">
-            <a href="" target="_blank" className="cursor-pointer">
+            <a href="https://en.itu.dk/Programmes/BSc-Programmes/Software-Development" target="_blank" className="cursor-pointer">
               @IT-University of Copenhagen
             </a>
           </h3>
