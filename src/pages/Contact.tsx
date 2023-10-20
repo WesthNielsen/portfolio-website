@@ -17,13 +17,13 @@ const Contact = () => {
   return (
     <div
       id="contactContainer"
-      className="w-full h-full flex items-center justify-center overflow-hidden scale-0 opacity-0 -translate-y-1/2 translate-x-48 duration-500"
+      className="flex h-full w-full -translate-y-1/2 translate-x-48 scale-0 items-center justify-center overflow-hidden opacity-0 duration-500"
     >
-      <div className="flex flex-col justify-center items-center h-2/3 w-full md:w-1/2 px-4 overflow-hidden">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold pb-2">
+      <div className="flex h-2/3 w-full flex-col items-center justify-center overflow-hidden px-4 md:w-1/2">
+        <h1 className="pb-2 text-2xl font-bold md:text-3xl lg:text-4xl">
           Did I pique your <i>interest?</i>
         </h1>
-        <h2 className="text-lg md:text-2xl lg:text-3xl italic font-semibold pb-8">
+        <h2 className="pb-8 text-lg font-semibold italic md:text-2xl lg:text-3xl">
           Feel free to reach out:
         </h2>
         <div className="h-full w-full px-4">

@@ -5,14 +5,14 @@ import { IoLogoCss3 } from "react-icons/io";
 
 const SkillList = () => {
   return (
-    <div className="w-full h-min flex justify-evenly text-3xl md:text-4xl lg:text-6xl">
-      <FaReact className="hover:scale-125 duration-200 hover:text-[#61DAFB]" />
-      <SiTypescript className="hover:scale-125 duration-200 hover:text-[#007ACC]" />
-      <IoLogoCss3 className="hover:scale-125 duration-200 hover:text-[#1572B6]" />
-      <SiTailwindcss className="hover:scale-125 duration-200 hover:text-[#38B2AC]" />
-      <SiFigma className="hover:scale-125 duration-200 hover:text-[#A259FF]" />
-      <FaJava className="hover:scale-125 duration-200 hover:text-[#D00000]" />
-      <SiCsharp className="hover:scale-125 duration-200 hover:text-[#239120]" />
+    <div className="flex h-min w-full justify-evenly text-3xl md:text-4xl lg:text-6xl">
+      <FaReact className="duration-200 hover:scale-125 hover:text-[#61DAFB]" />
+      <SiTypescript className="duration-200 hover:scale-125 hover:text-[#007ACC]" />
+      <IoLogoCss3 className="duration-200 hover:scale-125 hover:text-[#1572B6]" />
+      <SiTailwindcss className="duration-200 hover:scale-125 hover:text-[#38B2AC]" />
+      <SiFigma className="duration-200 hover:scale-125 hover:text-[#A259FF]" />
+      <FaJava className="duration-200 hover:scale-125 hover:text-[#D00000]" />
+      <SiCsharp className="duration-200 hover:scale-125 hover:text-[#239120]" />
     </div>
   );
 };

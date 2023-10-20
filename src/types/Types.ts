@@ -1,6 +1,6 @@
 export type PortfolioProject = {
-    imageName?: string;
-    projectName? : string;
-    projectDescription?: string;
-    projectGithub?: string;
-}
+  imageName?: string;
+  projectName?: string;
+  projectDescription?: string;
+  projectGithub?: string;
+};

@@ -8,9 +8,9 @@ const PortfolioCard = (props: { project: PortfolioProject }) => {
   };
 
   return props.project.imageName ? (
-    <div className="w-full h-full rounded-3xl overflow-hidden shadow-lg hover:shadow-xl shadow-primary hover:shadow-primary ease-in-out relative group cursor-default duration-500 hover:scale-105">
+    <div className="group relative h-full w-full cursor-default overflow-hidden rounded-3xl shadow-lg shadow-primary duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-primary">
       <div
-        className={"w-full h-full absolute top-0 left-0 bg-cover bg-center"}
+        className={"absolute left-0 top-0 h-full w-full bg-cover bg-center"}
         style={{
           backgroundImage:
             "url(" +
@@ -18,25 +18,25 @@ const PortfolioCard = (props: { project: PortfolioProject }) => {
             ")",
         }}
       />
-      <div className="bg-black/60 w-full h-full bg-cover opacity-0 backdrop-blur-sm hover:opacity-100 duration-500">
-        <div className="w-full h-full pt-2 pb-2 px-4 flex items-center justify-center flex-col ">
-          <div className="relative w-full flex justify-center items-center pb-2">
+      <div className="h-full w-full bg-black/60 bg-cover opacity-0 backdrop-blur-sm duration-500 hover:opacity-100">
+        <div className="flex h-full w-full flex-col items-center justify-center px-4 pb-2 pt-2 ">
+          <div className="relative flex w-full items-center justify-center pb-2">
             <h1 className="text-xl md:text-2xl">{props.project.projectName}</h1>
             {props.project.projectGithub && (
               <AiFillGithub
-                className="text-2xl absolute h-full left-0 cursor-pointer"
+                className="absolute left-0 h-full cursor-pointer text-2xl"
                 onClick={redirect}
               />
             )}
           </div>
-          <p className="w-full h-full text-sm md:text-base overflow-hidden">
+          <p className="h-full w-full overflow-hidden text-sm md:text-base">
             {props.project.projectDescription}
           </p>
         </div>
       </div>
     </div>
   ) : (
-    <div className="w-full h-full" />
+    <div className="h-full w-full" />
   );
 };
 

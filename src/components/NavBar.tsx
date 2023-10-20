@@ -36,14 +36,14 @@ const NavBar = (props: {
   return (
     <header
       id="header"
-      className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden"
+      className="pointer-events-none absolute left-0 top-0 h-full w-full overflow-hidden"
     >
-      <div className="relative top-0 left-0 w-full h-16 pointer-events-auto">
+      <div className="pointer-events-auto relative left-0 top-0 h-16 w-full">
         <nav
           id="nav"
-          className="rounded-l-2xl absolute w-4/5 h-screen top-0 right-0 flex flex-col justify-center items-center duration-300 md:translate-x-0 md:w-full md:h-full md:rounded-none bg-background/95 md:bg-transparent md:mt-3 z-[1]"
+          className="absolute right-0 top-0 z-[1] flex h-screen w-4/5 flex-col items-center justify-center rounded-l-2xl bg-background/95 duration-300 md:mt-3 md:h-full md:w-full md:translate-x-0 md:rounded-none md:bg-transparent"
         >
-          <div className="w-full h-2/3 flex flex-col justify-evenly items-center md:w-1/4 md:h-full md:flex-row">
+          <div className="flex h-2/3 w-full flex-col items-center justify-evenly md:h-full md:w-1/4 md:flex-row">
             <div className="w-1/3 md:h-2/3">
               <NavBarItem
                 input="About"
@@ -71,12 +71,12 @@ const NavBar = (props: {
           </div>
         </nav>
         <div
-          className="absolute top-0 right-0 h-full w-max aspect-square flex items-center justify-center cursor-pointer text-2xl md:hidden z-[1]"
+          className="absolute right-0 top-0 z-[1] flex aspect-square h-full w-max cursor-pointer items-center justify-center text-2xl md:hidden"
           onClick={() => toggleMenu()}
         >
           {menuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
         </div>
-        <div className="absolute top-0 left-1/2 md:left-0 -translate-x-1/2 md:-translate-x-0 w-36 h-full md:mt-3 md:z-[1]">
+        <div className="absolute left-1/2 top-0 h-full w-36 -translate-x-1/2 md:left-0 md:z-[1] md:mt-3 md:-translate-x-0">
           <Logo selected={props.selected} setSelected={props.setSelected} />
         </div>
       </div>

@@ -68,11 +68,11 @@ const Logo = (props: {
     <button
       id="logoButton"
       onClick={handleClick}
-      className={"relative h-full w-full group cursor-default"}
+      className={"group relative h-full w-full cursor-default"}
     >
       <div
         id="target"
-        className={`h-full w-full bg-contain bg-no-repeat bg-center duration-200 group-hover:opacity-0`}
+        className={`h-full w-full bg-contain bg-center bg-no-repeat duration-200 group-hover:opacity-0`}
         style={{
           backgroundImage:
             "url(" + require(`../assets/Logo/${images[currentIndex]}`) + ")",
@@ -80,7 +80,7 @@ const Logo = (props: {
       />
       <div
         id="target"
-        className={`h-full w-full bg-contain bg-no-repeat bg-center duration-200 group-hover:opacity-0 absolute top-0 left-0 blur-xl brightness-150`}
+        className={`absolute left-0 top-0 h-full w-full bg-contain bg-center bg-no-repeat blur-xl brightness-150 duration-200 group-hover:opacity-0`}
         style={{
           backgroundImage:
             "url(" + require(`../assets/Logo/${images[currentIndex]}`) + ")",
@@ -89,14 +89,14 @@ const Logo = (props: {
 
       <div
         id="target"
-        className={`h-full w-full bg-contain bg-no-repeat bg-center group-hover:scale-110 duration-200 opacity-0 group-hover:opacity-100 absolute top-0 left-0`}
+        className={`absolute left-0 top-0 h-full w-full bg-contain bg-center bg-no-repeat opacity-0 duration-200 group-hover:scale-110 group-hover:opacity-100`}
         style={{
           backgroundImage: "url(" + require("../assets/Logo/Full.png") + ")",
         }}
       />
       <div
         id="target"
-        className={`h-full w-full bg-contain bg-no-repeat bg-center group-hover:scale-110 duration-200 opacity-0 group-hover:opacity-100 absolute top-0 left-0 blur-xl brightness-150`}
+        className={`absolute left-0 top-0 h-full w-full bg-contain bg-center bg-no-repeat opacity-0 blur-xl brightness-150 duration-200 group-hover:scale-110 group-hover:opacity-100`}
         style={{
           backgroundImage: "url(" + require("../assets/Logo/Full.png") + ")",
         }}
