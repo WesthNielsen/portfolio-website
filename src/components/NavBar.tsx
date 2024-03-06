@@ -43,7 +43,7 @@ const NavBar = (props: {
           id="nav"
           className="absolute right-0 top-0 z-[1] flex h-screen w-4/5 flex-col items-center justify-center rounded-l-2xl bg-background/95 duration-300 md:mt-3 md:h-full md:w-full md:translate-x-0 md:rounded-none md:bg-transparent"
         >
-          <div className="flex h-2/3 w-full flex-col items-center justify-evenly md:h-full md:w-1/4 md:flex-row">
+          <div className="flex h-2/3 w-full flex-col items-center justify-evenly md:h-full md:w-1/4 md:flex-row min-w-fit">
             <div className="w-1/3 md:h-2/3">
               <NavBarItem
                 input="About"
