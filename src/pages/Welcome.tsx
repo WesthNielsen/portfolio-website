@@ -22,7 +22,7 @@ const Welcome = () => {
       id="portfolioContainer"
       className="flex h-full w-full items-center justify-center overflow-hidden"
     >
-      <div className="flex h-2/3 w-full flex-col justify-center overflow-hidden px-4 md:w-4/5">
+      <div className="flex h-2/3 w-full flex-col justify-center overflow-vissible px-4 md:w-4/5">
         <h1
           id="name"
           className="-translate-x-full text-3xl font-bold opacity-0 duration-500 lg:text-6xl"
