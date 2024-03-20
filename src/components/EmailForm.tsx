@@ -22,7 +22,7 @@ const EmailForm = () => {
         from_email: emailRef.current?.value,
         message: textRef.current?.value,
       });
-      alert("email successfully sent check inbox");
+      alert("email successfully sent");
     } catch (error) {
     } finally {
       setLoading(false);
