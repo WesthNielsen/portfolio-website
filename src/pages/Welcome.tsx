@@ -37,7 +37,7 @@ const Welcome = () => {
         </h2>
         <h3
           id="studies"
-          className="-translate-x-full text-lg italic text-accent opacity-0 duration-1000 lg:text-xl"
+          className="-translate-x-full text-lg italic text-accent opacity-0 duration-1000 lg:text-xl underline"
         >
           <a
             href="https://en.itu.dk/Programmes/BSc-Programmes/Software-Development"
